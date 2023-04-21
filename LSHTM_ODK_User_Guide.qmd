@@ -228,3 +228,17 @@ There's lots of great stuff on the internet and here's some stuff to get you sta
 -   Dr Michael Marks has produced a guide which follows the examples of [LSHTM's Clinical Epidemiology module, written in R](https://rpubs.com/michaelmarks/R-Clin-Epi)
 
 -   For more advanced and specifically epidemiological analysis, the [Epidemiologist R Handbook](http://protect-eu.mimecast.com/s/GJvdCzXkjiEMYnBiwMaJp?domain=epirhandbook.com) is brilliant
+
+**I can't afford to make a Pay What You Can payment, will you let me use the system?**
+
+-   Yes
+
+**I'm based outside LSHTM, can I still use the system?**
+
+Yes, if you are collaborating with someone from LSHTM, but it can get complicated, so contact us to discuss this on a case by case basis
+
+-   Sometimes a commercial provider is a better option
+
+**I'm not doing research, can I use ODK for internal data management/collection/survey work?**
+
+Yes, we use ODK internally for lots of things like monitoring student progress, or doing internal surveys, forms and so on. You should always check what needs to go through ethics and what doesn't. This can be quite complicated.
