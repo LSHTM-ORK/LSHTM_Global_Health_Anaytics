@@ -1,0 +1,29 @@
+project:
+  type: book
+  output-dir: docs
+
+book:
+
+  chapters:
+  - index.qmd
+
+  - part: "ODK"
+    chapters:
+       - LSHTM_ODK_User_Guide.qmd
+       - ruODK_basics.qmd
+
+  - part: "Other Data Tools"
+    chapters:
+       - data_tools.qmd
+
+
+bibliography: references.bib
+
+format:
+  html:
+    theme: cosmo
+
+editor: visual
+
+
+
