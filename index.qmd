@@ -19,17 +19,3 @@ Members of the LSHTM Global Health Analytics Group lead two work-packages (Labs/
 We previously led a major programme of research in to the epidemiology of trachoma and other neglected tropical diseases in the Western Pacific Region. This research was funded by more than £800,000 in grants from the International Trachoma Initiative, Fred Hollows Foundation and Coalition for Operational Research on NTDs (COR-NTD).
 
 The LSHTM Global Health Analytics group provide platforms to support global health research through the implementation of technological solutions to data collection and making for epidemiological, clinical research and social sciences studies that aim to improve health worldwide.
-
-### **End User Services**
-
-#### [**LSHTM ODK**](https://opendatakit.lshtm.ac.uk/lshtm-odk-servers/)
-
-A suite of tools which support the implementation of [ODK](http://getodk.org/), a software package for research use which allows tablet & webform based data collection via xforms. This service is available to all LSHTM researchers and their partners.
-
-#### [**LSHTM Emergency and Epidemic Data Kit**](http://opendatakit.lshtm.ac.uk/edk/)
-
-A specialist implementation of our data tools, which aims to support international efforts to contain and control epidemics and humanitarian emergencies through implementation of data solutions and rapid mapping. Our team of expert data scientists, epidemiologists, triallists and clinicians are working in collaboration with the UK Public Health Rapid Support Team to provide data systems for stakeholders in emergency and epidemic response. We are able to rapidly respond with coding, hardware and data infrastructures and disseminate our tools openly. This service is available to all agencies responding to humanitarian emergencies.
-
-#### [**LSHTM Open Making Resources**](http://blogs.lshtm.ac.uk/opendatakit/lshtm-open-making-kit/)
-
-3D design and print support for researchers with prototyping, equipment manufacturing (for lab and field) and other making needs. This service is available to all LSHTM staff & students.
