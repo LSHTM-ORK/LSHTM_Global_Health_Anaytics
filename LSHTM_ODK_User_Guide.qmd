@@ -1,6 +1,6 @@
-# LSHTM ODK Server Setup Guide & Terms of Use
+# [LSHTM ODK Server Setup Guide & Terms of Use](https://lshtm-ork.github.io/LSHTM_Global_Health_Anaytics/LSHTM_ODK_User_Guide.html)
 
-**version 3.1.0 -- 2024-01-05**
+**version 3.1.1 -- 2024-01-05**
 
 </Br></Br>
 
@@ -41,6 +41,10 @@ We would like to take this opportunity to emphasise that before starting any dat
 General Information on data protection at LSHTM can be found [here](#0)
 
 If you need support for data protection issues, or if you identify a data breach, please contact the LSHTM Data Protection Officer at [DPO\@lshtm.ac.uk](#0)
+
+## Your project
+
+Each ODK Project is intended for use in a single study. Please do not use the same project for multiple simultaneous studies, or re-purpose a project for future, or follow-on studies. We are happy to provide users with access to multiple projects, but each project needs to be initiated by completing [this form](https://docs.google.com/forms/d/1fR-hyt3KY3dqrRyFeoKOx0DvBHm1LBc3Q1LVG9GmPWU/edit?usp=forms_home&ths=true%5D).
 
 ## Server Locations
 
@@ -237,6 +241,8 @@ When you have completed your project, we recommend the following decommissioning
 
 -   For further instructions on how to use ODK, please refer to the official ODK documentation at <https://docs.getodk.org/>.
 
+-   ODK has an active user community providing information and support at [forum.getodk.org ](https://forum.getodk.org/)
+
 ## ODK XLS-Form templates and tutorials
 
 ODK provide detailed information about how to create forms [here](https://docs.getodk.org/xlsform/). We strongly recommend starting with their [tutorial](https://docs.getodk.org/xlsform-first-form/). We also believe that all forms should be based on the [official template file](https://github.com/getodk/xlsform-template/raw/main/ODK%20XLSForm%20Template.xlsx) as the consistent style, formatting and tools provided in the template will make it easier for you to share, reuse and re-purpose parts of your form in the future.
@@ -327,7 +333,7 @@ There's lots of great stuff on the internet and here's some stuff to get you sta
 
 Yes, if you are collaborating with someone from LSHTM, but it can get complicated, so contact us to discuss this on a case by case basis
 
--   Sometimes a commercial provider is a better option
+-   Sometimes a commercial provider is a better option. We recommend and trust [getODK](https://getodk.org/) and [KoBoToolbox](https://www.kobotoolbox.org/)
 
 **I'm not doing research, can I use ODK for internal data management/collection/survey work?**
 

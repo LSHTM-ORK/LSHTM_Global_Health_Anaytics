@@ -73,7 +73,7 @@ ul.task-list li input[type="checkbox"] {
       <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar,#quarto-sidebar-glass" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
         <i class="bi bi-layout-text-sidebar-reverse"></i>
       </button>
-      <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./LSHTM_ODK_User_Guide.html"><span class="chapter-number">2</span>&nbsp; <span class="chapter-title">LSHTM ODK Server Setup Guide &amp; Terms of Use</span></a></li></ol></nav>
+      <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./LSHTM_ODK_User_Guide.html"><span class="chapter-number">2</span>&nbsp; <span class="chapter-title">[LSHTM ODK Server Setup Guide &amp; Terms of Use](https://lshtm-ork.github.io/LSHTM_Global_Health_Anaytics/LSHTM_ODK_User_Guide.html)</span></a></li></ol></nav>
       <a class="flex-grow-1" role="button" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar,#quarto-sidebar-glass" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
       </a>
       <button type="button" class="btn quarto-search-button" aria-label="" onclick="window.quartoOpenSearch();">
@@ -102,7 +102,7 @@ ul.task-list li input[type="checkbox"] {
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="./LSHTM_ODK_User_Guide.html" class="sidebar-item-text sidebar-link active">
- <span class="menu-text"><span class="chapter-number">2</span>&nbsp; <span class="chapter-title">LSHTM ODK Server Setup Guide &amp; Terms of Use</span></span></a>
+ <span class="menu-text"><span class="chapter-number">2</span>&nbsp; <span class="chapter-title"></span></span></a><a href="https://lshtm-ork.github.io/LSHTM_Global_Health_Anaytics/LSHTM_ODK_User_Guide.html">LSHTM ODK Server Setup Guide &amp; Terms of Use</a>
   </div>
 </li>
     </ul>
@@ -118,37 +118,38 @@ ul.task-list li input[type="checkbox"] {
   <li><a href="#introduction" id="toc-introduction" class="nav-link active" data-scroll-target="#introduction"><span class="header-section-number">2.1</span> Introduction</a></li>
   <li><a href="#responsibilities" id="toc-responsibilities" class="nav-link" data-scroll-target="#responsibilities"><span class="header-section-number">2.2</span> Responsibilities</a></li>
   <li><a href="#before-starting-data-collection" id="toc-before-starting-data-collection" class="nav-link" data-scroll-target="#before-starting-data-collection"><span class="header-section-number">2.3</span> Before starting data collection</a></li>
-  <li><a href="#server-locations" id="toc-server-locations" class="nav-link" data-scroll-target="#server-locations"><span class="header-section-number">2.4</span> Server Locations</a></li>
-  <li><a href="#data-security" id="toc-data-security" class="nav-link" data-scroll-target="#data-security"><span class="header-section-number">2.5</span> Data Security</a></li>
-  <li><a href="#data-retention" id="toc-data-retention" class="nav-link" data-scroll-target="#data-retention"><span class="header-section-number">2.6</span> Data Retention</a></li>
-  <li><a href="#who-will-be-able-to-see-your-data" id="toc-who-will-be-able-to-see-your-data" class="nav-link" data-scroll-target="#who-will-be-able-to-see-your-data"><span class="header-section-number">2.7</span> Who will be able to see your data?</a>
+  <li><a href="#your-project" id="toc-your-project" class="nav-link" data-scroll-target="#your-project"><span class="header-section-number">2.4</span> Your project</a></li>
+  <li><a href="#server-locations" id="toc-server-locations" class="nav-link" data-scroll-target="#server-locations"><span class="header-section-number">2.5</span> Server Locations</a></li>
+  <li><a href="#data-security" id="toc-data-security" class="nav-link" data-scroll-target="#data-security"><span class="header-section-number">2.6</span> Data Security</a></li>
+  <li><a href="#data-retention" id="toc-data-retention" class="nav-link" data-scroll-target="#data-retention"><span class="header-section-number">2.7</span> Data Retention</a></li>
+  <li><a href="#who-will-be-able-to-see-your-data" id="toc-who-will-be-able-to-see-your-data" class="nav-link" data-scroll-target="#who-will-be-able-to-see-your-data"><span class="header-section-number">2.8</span> Who will be able to see your data?</a>
   <ul class="collapse">
-  <li><a href="#standard" id="toc-standard" class="nav-link" data-scroll-target="#standard"><span class="header-section-number">2.7.1</span> <em>Standard</em></a></li>
-  <li><a href="#zero-trust" id="toc-zero-trust" class="nav-link" data-scroll-target="#zero-trust"><span class="header-section-number">2.7.2</span> <em>Zero Trust</em></a></li>
+  <li><a href="#standard" id="toc-standard" class="nav-link" data-scroll-target="#standard"><span class="header-section-number">2.8.1</span> <em>Standard</em></a></li>
+  <li><a href="#zero-trust" id="toc-zero-trust" class="nav-link" data-scroll-target="#zero-trust"><span class="header-section-number">2.8.2</span> <em>Zero Trust</em></a></li>
   </ul></li>
-  <li><a href="#pay-what-you-can" id="toc-pay-what-you-can" class="nav-link" data-scroll-target="#pay-what-you-can"><span class="header-section-number">2.8</span> Pay What You Can</a></li>
-  <li><a href="#gcp-fda-21-cfr-part-11-compliance" id="toc-gcp-fda-21-cfr-part-11-compliance" class="nav-link" data-scroll-target="#gcp-fda-21-cfr-part-11-compliance"><span class="header-section-number">2.9</span> GCP / FDA 21 CFR Part 11 compliance</a></li>
-  <li><a href="#fair-usage" id="toc-fair-usage" class="nav-link" data-scroll-target="#fair-usage"><span class="header-section-number">2.10</span> Fair Usage</a></li>
-  <li><a href="#system-information-downtime" id="toc-system-information-downtime" class="nav-link" data-scroll-target="#system-information-downtime"><span class="header-section-number">2.11</span> System Information / Downtime</a></li>
-  <li><a href="#project-names" id="toc-project-names" class="nav-link" data-scroll-target="#project-names"><span class="header-section-number">2.12</span> Project Names</a></li>
-  <li><a href="#setting-up-your-project" id="toc-setting-up-your-project" class="nav-link" data-scroll-target="#setting-up-your-project"><span class="header-section-number">2.13</span> Setting up your project</a></li>
-  <li><a href="#user-types" id="toc-user-types" class="nav-link" data-scroll-target="#user-types"><span class="header-section-number">2.14</span> User types</a></li>
-  <li><a href="#initial-project-settings" id="toc-initial-project-settings" class="nav-link" data-scroll-target="#initial-project-settings"><span class="header-section-number">2.15</span> Initial project settings</a></li>
-  <li><a href="#gdpr" id="toc-gdpr" class="nav-link" data-scroll-target="#gdpr"><span class="header-section-number">2.16</span> GDPR</a></li>
-  <li><a href="#decommissioning-your-project" id="toc-decommissioning-your-project" class="nav-link" data-scroll-target="#decommissioning-your-project"><span class="header-section-number">2.17</span> Decommissioning your project</a></li>
-  <li><a href="#detailed-instructions" id="toc-detailed-instructions" class="nav-link" data-scroll-target="#detailed-instructions"><span class="header-section-number">2.18</span> Detailed instructions</a></li>
-  <li><a href="#odk-xls-form-templates-and-tutorials" id="toc-odk-xls-form-templates-and-tutorials" class="nav-link" data-scroll-target="#odk-xls-form-templates-and-tutorials"><span class="header-section-number">2.19</span> ODK XLS-Form templates and tutorials</a></li>
-  <li><a href="#device-loans" id="toc-device-loans" class="nav-link" data-scroll-target="#device-loans"><span class="header-section-number">2.20</span> Device Loans</a></li>
-  <li><a href="#odk-central-application-programming-interface-api" id="toc-odk-central-application-programming-interface-api" class="nav-link" data-scroll-target="#odk-central-application-programming-interface-api"><span class="header-section-number">2.21</span> ODK Central Application Programming Interface (API)</a></li>
-  <li><a href="#additional-tools-and-functions" id="toc-additional-tools-and-functions" class="nav-link" data-scroll-target="#additional-tools-and-functions"><span class="header-section-number">2.22</span> Additional tools and functions</a>
+  <li><a href="#pay-what-you-can" id="toc-pay-what-you-can" class="nav-link" data-scroll-target="#pay-what-you-can"><span class="header-section-number">2.9</span> Pay What You Can</a></li>
+  <li><a href="#gcp-fda-21-cfr-part-11-compliance" id="toc-gcp-fda-21-cfr-part-11-compliance" class="nav-link" data-scroll-target="#gcp-fda-21-cfr-part-11-compliance"><span class="header-section-number">2.10</span> GCP / FDA 21 CFR Part 11 compliance</a></li>
+  <li><a href="#fair-usage" id="toc-fair-usage" class="nav-link" data-scroll-target="#fair-usage"><span class="header-section-number">2.11</span> Fair Usage</a></li>
+  <li><a href="#system-information-downtime" id="toc-system-information-downtime" class="nav-link" data-scroll-target="#system-information-downtime"><span class="header-section-number">2.12</span> System Information / Downtime</a></li>
+  <li><a href="#project-names" id="toc-project-names" class="nav-link" data-scroll-target="#project-names"><span class="header-section-number">2.13</span> Project Names</a></li>
+  <li><a href="#setting-up-your-project" id="toc-setting-up-your-project" class="nav-link" data-scroll-target="#setting-up-your-project"><span class="header-section-number">2.14</span> Setting up your project</a></li>
+  <li><a href="#user-types" id="toc-user-types" class="nav-link" data-scroll-target="#user-types"><span class="header-section-number">2.15</span> User types</a></li>
+  <li><a href="#initial-project-settings" id="toc-initial-project-settings" class="nav-link" data-scroll-target="#initial-project-settings"><span class="header-section-number">2.16</span> Initial project settings</a></li>
+  <li><a href="#gdpr" id="toc-gdpr" class="nav-link" data-scroll-target="#gdpr"><span class="header-section-number">2.17</span> GDPR</a></li>
+  <li><a href="#decommissioning-your-project" id="toc-decommissioning-your-project" class="nav-link" data-scroll-target="#decommissioning-your-project"><span class="header-section-number">2.18</span> Decommissioning your project</a></li>
+  <li><a href="#detailed-instructions" id="toc-detailed-instructions" class="nav-link" data-scroll-target="#detailed-instructions"><span class="header-section-number">2.19</span> Detailed instructions</a></li>
+  <li><a href="#odk-xls-form-templates-and-tutorials" id="toc-odk-xls-form-templates-and-tutorials" class="nav-link" data-scroll-target="#odk-xls-form-templates-and-tutorials"><span class="header-section-number">2.20</span> ODK XLS-Form templates and tutorials</a></li>
+  <li><a href="#device-loans" id="toc-device-loans" class="nav-link" data-scroll-target="#device-loans"><span class="header-section-number">2.21</span> Device Loans</a></li>
+  <li><a href="#odk-central-application-programming-interface-api" id="toc-odk-central-application-programming-interface-api" class="nav-link" data-scroll-target="#odk-central-application-programming-interface-api"><span class="header-section-number">2.22</span> ODK Central Application Programming Interface (API)</a></li>
+  <li><a href="#additional-tools-and-functions" id="toc-additional-tools-and-functions" class="nav-link" data-scroll-target="#additional-tools-and-functions"><span class="header-section-number">2.23</span> Additional tools and functions</a>
   <ul class="collapse">
-  <li><a href="#converting-gis-administrative-data-to-odk-compatible-lists" id="toc-converting-gis-administrative-data-to-odk-compatible-lists" class="nav-link" data-scroll-target="#converting-gis-administrative-data-to-odk-compatible-lists"><span class="header-section-number">2.22.1</span> Converting GIS administrative data to ODK compatible lists</a></li>
-  <li><a href="#geofencing" id="toc-geofencing" class="nav-link" data-scroll-target="#geofencing"><span class="header-section-number">2.22.2</span> Geofencing</a></li>
-  <li><a href="#biometrics-fingerprints" id="toc-biometrics-fingerprints" class="nav-link" data-scroll-target="#biometrics-fingerprints"><span class="header-section-number">2.22.3</span> Biometrics / Fingerprints</a></li>
-  <li><a href="#audit-trail-reports" id="toc-audit-trail-reports" class="nav-link" data-scroll-target="#audit-trail-reports"><span class="header-section-number">2.22.4</span> Audit trail reports</a></li>
-  <li><a href="#data-dictionaries" id="toc-data-dictionaries" class="nav-link" data-scroll-target="#data-dictionaries"><span class="header-section-number">2.22.5</span> Data Dictionaries</a></li>
+  <li><a href="#converting-gis-administrative-data-to-odk-compatible-lists" id="toc-converting-gis-administrative-data-to-odk-compatible-lists" class="nav-link" data-scroll-target="#converting-gis-administrative-data-to-odk-compatible-lists"><span class="header-section-number">2.23.1</span> Converting GIS administrative data to ODK compatible lists</a></li>
+  <li><a href="#geofencing" id="toc-geofencing" class="nav-link" data-scroll-target="#geofencing"><span class="header-section-number">2.23.2</span> Geofencing</a></li>
+  <li><a href="#biometrics-fingerprints" id="toc-biometrics-fingerprints" class="nav-link" data-scroll-target="#biometrics-fingerprints"><span class="header-section-number">2.23.3</span> Biometrics / Fingerprints</a></li>
+  <li><a href="#audit-trail-reports" id="toc-audit-trail-reports" class="nav-link" data-scroll-target="#audit-trail-reports"><span class="header-section-number">2.23.4</span> Audit trail reports</a></li>
+  <li><a href="#data-dictionaries" id="toc-data-dictionaries" class="nav-link" data-scroll-target="#data-dictionaries"><span class="header-section-number">2.23.5</span> Data Dictionaries</a></li>
   </ul></li>
-  <li><a href="#frequently-asked-question-faq" id="toc-frequently-asked-question-faq" class="nav-link" data-scroll-target="#frequently-asked-question-faq"><span class="header-section-number">2.23</span> Frequently Asked Question (FAQ)</a></li>
+  <li><a href="#frequently-asked-question-faq" id="toc-frequently-asked-question-faq" class="nav-link" data-scroll-target="#frequently-asked-question-faq"><span class="header-section-number">2.24</span> Frequently Asked Question (FAQ)</a></li>
   </ul>
 </nav>
     </div>
@@ -157,7 +158,7 @@ ul.task-list li input[type="checkbox"] {
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<h1 class="title"><span class="chapter-number">2</span>&nbsp; <span class="chapter-title">LSHTM ODK Server Setup Guide &amp; Terms of Use</span></h1>
+<h1 class="title"><span class="chapter-number">2</span>&nbsp; <span class="chapter-title"><a href="https://lshtm-ork.github.io/LSHTM_Global_Health_Anaytics/LSHTM_ODK_User_Guide.html">LSHTM ODK Server Setup Guide &amp; Terms of Use</a></span></h1>
 </div>
 
 
@@ -172,7 +173,7 @@ ul.task-list li input[type="checkbox"] {
 
 </header>
 
-<p><strong>version 3.1.0 – 2024-01-05</strong></p>
+<p><strong>version 3.1.1 – 2024-01-05</strong></p>
 <p><br><br></p>
 <section id="introduction" class="level2" data-number="2.1">
 <h2 data-number="2.1" class="anchored" data-anchor-id="introduction"><span class="header-section-number">2.1</span> Introduction</h2>
@@ -203,28 +204,32 @@ ul.task-list li input[type="checkbox"] {
 <p>General Information on data protection at LSHTM can be found <a href="#0">here</a></p>
 <p>If you need support for data protection issues, or if you identify a data breach, please contact the LSHTM Data Protection Officer at <a href="#0">DPO@lshtm.ac.uk</a></p>
 </section>
-<section id="server-locations" class="level2" data-number="2.4">
-<h2 data-number="2.4" class="anchored" data-anchor-id="server-locations"><span class="header-section-number">2.4</span> Server Locations</h2>
+<section id="your-project" class="level2" data-number="2.4">
+<h2 data-number="2.4" class="anchored" data-anchor-id="your-project"><span class="header-section-number">2.4</span> Your project</h2>
+<p>Each ODK Project is intended for use in a single study. Please do not use the same project for multiple simultaneous studies, or re-purpose a project for future, or follow-on studies. We are happy to provide users with access to multiple projects, but each project needs to be initiated by completing <a href="https://docs.google.com/forms/d/1fR-hyt3KY3dqrRyFeoKOx0DvBHm1LBc3Q1LVG9GmPWU/edit?usp=forms_home&amp;ths=true%5D">this form</a>.</p>
+</section>
+<section id="server-locations" class="level2" data-number="2.5">
+<h2 data-number="2.5" class="anchored" data-anchor-id="server-locations"><span class="header-section-number">2.5</span> Server Locations</h2>
 <p>Data are stored on institutional servers in LSHTM’s data centres at Keppel St and Tavistock Place, but can be downloaded from anywhere in the world by web-users who have appropriate access to read data. If your project requires that data are stored on servers based in other countries, then you should contact us <a href="mailto:ODK@LSHTM.AC.UK"><em>odk@lshtm.ac.uk</em></a> to discuss your options</p>
 </section>
-<section id="data-security" class="level2" data-number="2.5">
-<h2 data-number="2.5" class="anchored" data-anchor-id="data-security"><span class="header-section-number">2.5</span> Data Security</h2>
+<section id="data-security" class="level2" data-number="2.6">
+<h2 data-number="2.6" class="anchored" data-anchor-id="data-security"><span class="header-section-number">2.6</span> Data Security</h2>
 <p>ODK Central data are encrypted at rest. This means that when you are not logged in, your data are safe and are securely encrypted.</p>
 <p>You should always log out of the Central server at the end of each session and should never save your password in your browser’s ‘remember password’ options.</p>
 <p>Using devices that are not protected by pin codes, encryption and physical protections may lead to compromise of your data. All data transfers from the ODK Collect app, or via the ODK API to the ODK Central server are protected by encrypted https connections.</p>
 </section>
-<section id="data-retention" class="level2" data-number="2.6">
-<h2 data-number="2.6" class="anchored" data-anchor-id="data-retention"><span class="header-section-number">2.6</span> Data Retention</h2>
+<section id="data-retention" class="level2" data-number="2.7">
+<h2 data-number="2.7" class="anchored" data-anchor-id="data-retention"><span class="header-section-number">2.7</span> Data Retention</h2>
 <p><strong>ODK Central is&nbsp;<u>not a long-term data storage solution</u>. You should download and backup your data on a regular basis. It is</strong> <strong>entirely your own responsibility to download and safely retain copies of your data and forms as you go along and at project completion</strong>.&nbsp;</p>
 <p>Our servers are backed up and mirrored between Keppel St and Tavistock place. We keep daily backups for 56 days, and monthly backups for a period of 12 months. These backups are kept&nbsp;<strong>for purposes of restoring the entire system</strong>&nbsp;in case of a complete system failure. It is extremely difficult, costly and time-consuming to restore the data from a single project using our system backups, so it is your own responsibility to&nbsp;<u><strong>keep your own backups</strong></u>.</p>
 <p>Any account which has had no new submissions for&nbsp;a&nbsp;<strong>six month period</strong>&nbsp;will be automatically archived. Web users (including project managers) will have their access automatically removed at this time. After archiving, servers will continue to accept new submissions, but no one will be able to download the data. No data will be lost, but access to archived data can only be restored by special arrangement. Please contact&nbsp;<a href="mailto:odk@lshtm.ac.uk">odk@lshtm.ac.uk</a>&nbsp;in this circumstance.</p>
 <p>Eighteen months after the project is archived (i.e.&nbsp;after 24 months of inactivity)&nbsp;<strong>we will permanently delete all project data without any further warnings</strong>. It is&nbsp;<strong>the&nbsp;responsibility&nbsp;of the project manager</strong> to keep copies of XLSForms and to download data regularly. Our team takes absolutely no responsibility for data left on an inactive or archived projects.</p>
 </section>
-<section id="who-will-be-able-to-see-your-data" class="level2" data-number="2.7">
-<h2 data-number="2.7" class="anchored" data-anchor-id="who-will-be-able-to-see-your-data"><span class="header-section-number">2.7</span> Who will be able to see your data?</h2>
+<section id="who-will-be-able-to-see-your-data" class="level2" data-number="2.8">
+<h2 data-number="2.8" class="anchored" data-anchor-id="who-will-be-able-to-see-your-data"><span class="header-section-number">2.8</span> Who will be able to see your data?</h2>
 <p>In this respect ODK provides options for standard security, as well as for ‘zero-trust’ contexts, but the choices you make about how you limit access to data will determine which of the various features you will be able to access on the system. Until the end of 2022, we required all users to default to a zero-trust model, but since 2023 we have allowed users to make an informed decision about how they wish to control access to their data. Whether you choose to use the standard or zero-trust models is up to you and this is controlled by how you choose to implement an additional layer of encryption on your forms and data.</p>
-<section id="standard" class="level3" data-number="2.7.1">
-<h3 data-number="2.7.1" class="anchored" data-anchor-id="standard"><span class="header-section-number">2.7.1</span> <em>Standard</em></h3>
+<section id="standard" class="level3" data-number="2.8.1">
+<h3 data-number="2.8.1" class="anchored" data-anchor-id="standard"><span class="header-section-number">2.8.1</span> <em>Standard</em></h3>
 <p>This is the default for a new project in ODK Central.</p>
 <ul>
 <li><p>Any user who has a role that allows data viewing can see your data - see&nbsp;<a href="https://docs.getodk.org/central-users/">here</a></p>
@@ -237,8 +242,8 @@ ul.task-list li input[type="checkbox"] {
 <li><p>Allows data to be fully recovered from backups by LSHTM ITS partners, even when passwords are lost</p></li>
 </ul>
 </section>
-<section id="zero-trust" class="level3" data-number="2.7.2">
-<h3 data-number="2.7.2" class="anchored" data-anchor-id="zero-trust"><span class="header-section-number">2.7.2</span> <em>Zero Trust</em></h3>
+<section id="zero-trust" class="level3" data-number="2.8.2">
+<h3 data-number="2.8.2" class="anchored" data-anchor-id="zero-trust"><span class="header-section-number">2.8.2</span> <em>Zero Trust</em></h3>
 <p>This is the best option for high security and zero-trust contexts, and for simpler data collection approaches that involve just one or two forms, with no need for long term data/form management.</p>
 <ul>
 <li><p>Implemented via “project level encryption”</p></li>
@@ -255,26 +260,26 @@ ul.task-list li input[type="checkbox"] {
 <p>If you forget or lose this password, there is no way to recover it and you will lose all your data. The password is never stored on the server, but is used as the secret key for decrypting data using cyphers that are stored by the server. Because of this, the system administrators cannot under any circumstance help you to recover the password.</p>
 </section>
 </section>
-<section id="pay-what-you-can" class="level2" data-number="2.8">
-<h2 data-number="2.8" class="anchored" data-anchor-id="pay-what-you-can"><span class="header-section-number">2.8</span> Pay What You Can</h2>
+<section id="pay-what-you-can" class="level2" data-number="2.9">
+<h2 data-number="2.9" class="anchored" data-anchor-id="pay-what-you-can"><span class="header-section-number">2.9</span> Pay What You Can</h2>
 <p>Everyone can use the system for £0 if they need to or want to.</p>
 <p><br>
 If you would like to support our activities with a pay what you can (PWYC) payment,&nbsp;this can be actioned via an inter account journal&nbsp;transfer (IAJT) to our project code ITCR052210 using account code 1300. Please note that some funders (EC, UKRI, WT and US Fed) may have different rules about this type of payment, so you should check with your administrators before making any PWYC payments.</p>
 <p>PWYC payments are used to support our service, to purchase devices and to support research and the publication of research papers emerging from the project.</p>
 </section>
-<section id="gcp-fda-21-cfr-part-11-compliance" class="level2" data-number="2.9">
-<h2 data-number="2.9" class="anchored" data-anchor-id="gcp-fda-21-cfr-part-11-compliance"><span class="header-section-number">2.9</span> GCP / FDA 21 CFR Part 11 compliance</h2>
+<section id="gcp-fda-21-cfr-part-11-compliance" class="level2" data-number="2.10">
+<h2 data-number="2.10" class="anchored" data-anchor-id="gcp-fda-21-cfr-part-11-compliance"><span class="header-section-number">2.10</span> GCP / FDA 21 CFR Part 11 compliance</h2>
 <p>The LSHTM ODK system has been used in a growing number of clinical trials. Users often ask whether ODK is GCP / FDA 21 CFR Part 11 compliant for use in clinical trials. Our answer is that no system is intrinsically compliant with these guidelines, but become compliant if used in a compliant way. Behind the scenes we have ensured that the platform meets technical requirements for backups, restores etc. The availability of audit trails (though you may need some help to make these, please ask us!) makes it possible to track post-submission edits to data and it is our firm belief that ODK is an excellent platform for data collection / management in clinical trials. We strongly encourage you to discuss your specific needs with us, especially if your trial is large and complex.</p>
 </section>
-<section id="fair-usage" class="level2" data-number="2.10">
-<h2 data-number="2.10" class="anchored" data-anchor-id="fair-usage"><span class="header-section-number">2.10</span> Fair Usage</h2>
+<section id="fair-usage" class="level2" data-number="2.11">
+<h2 data-number="2.11" class="anchored" data-anchor-id="fair-usage"><span class="header-section-number">2.11</span> Fair Usage</h2>
 <p>The Central server is a shared resource that is used by hundreds of projects. Whilst the server is able to handle very large projects without other users seeing performance drops, the system can become unstable when there is very high demand for data transfers from the server to client machines. This infrequently occurs, but can do so when users request large amounts of data with high frequency.</p>
 <p>Dashboards should update at most once a day, preferably between 0000 and 0500 UTC.&nbsp;</p>
 <p>Users should not attempt to create real-time high demand data links, or to build real time dashboards that pull data from the Central server with greater regularity. If you have specific needs to create high demand data links, then you should first discuss this with our team via&nbsp;<a href="mailto:odk@lshtm.ac.uk">odk@lshtm.ac.uk</a>.</p>
 <p>Users in violation of this policy may have their accounts&nbsp;suspended without warning.&nbsp;</p>
 </section>
-<section id="system-information-downtime" class="level2" data-number="2.11">
-<h2 data-number="2.11" class="anchored" data-anchor-id="system-information-downtime"><span class="header-section-number">2.11</span> System Information / Downtime</h2>
+<section id="system-information-downtime" class="level2" data-number="2.12">
+<h2 data-number="2.12" class="anchored" data-anchor-id="system-information-downtime"><span class="header-section-number">2.12</span> System Information / Downtime</h2>
 <ul>
 <li><p>Important system updates (for instance if our servers go down unexpectedly) will be announced through our X/Twitter account<a href="#0">@LSHTM_GHA</a></p></li>
 <li><p>Any URGENT issues should be emailed to <a href="mailto:odk@lshtm.ac.uk">odk@lshtm.ac.uk</a>.</p>
@@ -289,8 +294,8 @@ If you would like to support our activities with a pay what you can (PWYC) payme
 <li><p>Please consult the FAQ before emailing for support</p></li>
 </ul>
 </section>
-<section id="project-names" class="level2" data-number="2.12">
-<h2 data-number="2.12" class="anchored" data-anchor-id="project-names"><span class="header-section-number">2.12</span> Project Names</h2>
+<section id="project-names" class="level2" data-number="2.13">
+<h2 data-number="2.13" class="anchored" data-anchor-id="project-names"><span class="header-section-number">2.13</span> Project Names</h2>
 <ul>
 <li><p>Our project names include a short identifier and the name of the person responsible</p>
 <ul>
@@ -299,8 +304,8 @@ If you would like to support our activities with a pay what you can (PWYC) payme
 <li><p>The project name should not be&nbsp;changed&nbsp;under any circumstances</p></li>
 </ul>
 </section>
-<section id="setting-up-your-project" class="level2" data-number="2.13">
-<h2 data-number="2.13" class="anchored" data-anchor-id="setting-up-your-project"><span class="header-section-number">2.13</span> Setting up your project</h2>
+<section id="setting-up-your-project" class="level2" data-number="2.14">
+<h2 data-number="2.14" class="anchored" data-anchor-id="setting-up-your-project"><span class="header-section-number">2.14</span> Setting up your project</h2>
 <p>Request a server project LSHTM by completing <a href="https://docs.google.com/forms/d/1fR-hyt3KY3dqrRyFeoKOx0DvBHm1LBc3Q1LVG9GmPWU/edit?usp=forms_home&amp;ths=true%5D">this form</a>.</p>
 <ul>
 <li><p>Each ODK project server is only for use by your team and for the specific project named in the server request form.</p></li>
@@ -322,8 +327,8 @@ If you would like to support our activities with a pay what you can (PWYC) payme
 </ul>
 <p><img src="./images/central_project_view.png" class="img-fluid" alt="drawing" width="800"> <br></p>
 </section>
-<section id="user-types" class="level2" data-number="2.14">
-<h2 data-number="2.14" class="anchored" data-anchor-id="user-types"><span class="header-section-number">2.14</span> User types</h2>
+<section id="user-types" class="level2" data-number="2.15">
+<h2 data-number="2.15" class="anchored" data-anchor-id="user-types"><span class="header-section-number">2.15</span> User types</h2>
 <p>ODK Central has two types of users, these being <code>web users</code> and <code>app users</code>.</p>
 <ul>
 <li><p><a href="https://docs.getodk.org/central-users/#managing-web-users">Web users</a>&nbsp;are people who are authorised to use ODK Central’s web interface.&nbsp;There&nbsp;are&nbsp;<a href="https://docs.getodk.org/central-users/">different roles</a>&nbsp;for web-users, but only system admins can add web-users to your project. To add web users, please contact&nbsp;<a href="mailto:odk@lshtm.ac.uk">odk@lshtm.ac.uk</a>, providing the name, institute and role required for each user. For data security purposes you should aim to minimise the number of web-users who have higher levels of access to your data.&nbsp;</p></li>
@@ -331,8 +336,8 @@ If you would like to support our activities with a pay what you can (PWYC) payme
 <li><p><a href="https://docs.getodk.org/central-submissions/">Public access links</a>&nbsp;can be created by web users. These links can be used by participants to submit data through a web browser. They are useful for many types of work, including online/postal surveys and things advertised on websites, adverts and posters.</p></li>
 </ul>
 </section>
-<section id="initial-project-settings" class="level2" data-number="2.15">
-<h2 data-number="2.15" class="anchored" data-anchor-id="initial-project-settings"><span class="header-section-number">2.15</span> Initial project settings</h2>
+<section id="initial-project-settings" class="level2" data-number="2.16">
+<h2 data-number="2.16" class="anchored" data-anchor-id="initial-project-settings"><span class="header-section-number">2.16</span> Initial project settings</h2>
 <p>Before you can start collecting data, you have to change some settings. From the project page, click the <code>settings</code> tab. Here you have three options.</p>
 <p><img src="./images/central_settings.png" class="img-fluid" width="800"></p>
 <ul>
@@ -350,8 +355,8 @@ If you would like to support our activities with a pay what you can (PWYC) payme
 </ul></li>
 </ul>
 </section>
-<section id="gdpr" class="level2" data-number="2.16">
-<h2 data-number="2.16" class="anchored" data-anchor-id="gdpr"><span class="header-section-number">2.16</span> GDPR</h2>
+<section id="gdpr" class="level2" data-number="2.17">
+<h2 data-number="2.17" class="anchored" data-anchor-id="gdpr"><span class="header-section-number">2.17</span> GDPR</h2>
 <p>The <strong>General Data Protection Regulation (GDPR) (EU) 2016/679</strong> came in to force in May 2018 and this law requires that all reasonable steps should be taken to make it reasonably unlikely that personal and sensitive data relating to individuals and their health could be accessed or used by third parties without explicit consent.</p>
 <p><strong>PLEASE NOTE</strong></p>
 <ul>
@@ -360,8 +365,8 @@ If you would like to support our activities with a pay what you can (PWYC) payme
 </ul>
 <p>All data-related activities should follow the <a href="https://www.ukcgc.uk/the-caldicott-principles">eight Caldicott Principles</a>, a set of concepts which can guide you to ensure that data and information about people are collected, used and stored in a sensible, appropriate and confidential manner.</p>
 </section>
-<section id="decommissioning-your-project" class="level2" data-number="2.17">
-<h2 data-number="2.17" class="anchored" data-anchor-id="decommissioning-your-project"><span class="header-section-number">2.17</span> Decommissioning your project</h2>
+<section id="decommissioning-your-project" class="level2" data-number="2.18">
+<h2 data-number="2.18" class="anchored" data-anchor-id="decommissioning-your-project"><span class="header-section-number">2.18</span> Decommissioning your project</h2>
 <p>When you have completed your project, we recommend the following decommissioning steps</p>
 <ul>
 <li><p>Download all data</p></li>
@@ -374,53 +379,54 @@ If you would like to support our activities with a pay what you can (PWYC) payme
 <li><p>Email&nbsp;<a href="mailto:odk@lshtm.ac.uk">odk@lshtm.ac.uk</a>&nbsp;to let us know that you’ve finished</p></li>
 </ul>
 </section>
-<section id="detailed-instructions" class="level2" data-number="2.18">
-<h2 data-number="2.18" class="anchored" data-anchor-id="detailed-instructions"><span class="header-section-number">2.18</span> Detailed instructions</h2>
+<section id="detailed-instructions" class="level2" data-number="2.19">
+<h2 data-number="2.19" class="anchored" data-anchor-id="detailed-instructions"><span class="header-section-number">2.19</span> Detailed instructions</h2>
 <ul>
 <li><p>Your project should now be up and running, with either standard, zero trust (<code>project level)</code> or enhanced (<code>form level encryption)</code> in place.</p></li>
 <li><p>For further instructions on how to use ODK, please refer to the official ODK documentation at <a href="https://docs.getodk.org/" class="uri">https://docs.getodk.org/</a>.</p></li>
+<li><p>ODK has an active user community providing information and support at <a href="https://forum.getodk.org/">forum.getodk.org</a></p></li>
 </ul>
 </section>
-<section id="odk-xls-form-templates-and-tutorials" class="level2" data-number="2.19">
-<h2 data-number="2.19" class="anchored" data-anchor-id="odk-xls-form-templates-and-tutorials"><span class="header-section-number">2.19</span> ODK XLS-Form templates and tutorials</h2>
+<section id="odk-xls-form-templates-and-tutorials" class="level2" data-number="2.20">
+<h2 data-number="2.20" class="anchored" data-anchor-id="odk-xls-form-templates-and-tutorials"><span class="header-section-number">2.20</span> ODK XLS-Form templates and tutorials</h2>
 <p>ODK provide detailed information about how to create forms <a href="https://docs.getodk.org/xlsform/">here</a>. We strongly recommend starting with their <a href="https://docs.getodk.org/xlsform-first-form/">tutorial</a>. We also believe that all forms should be based on the <a href="https://github.com/getodk/xlsform-template/raw/main/ODK%20XLSForm%20Template.xlsx">official template file</a> as the consistent style, formatting and tools provided in the template will make it easier for you to share, reuse and re-purpose parts of your form in the future.</p>
 </section>
-<section id="device-loans" class="level2" data-number="2.20">
-<h2 data-number="2.20" class="anchored" data-anchor-id="device-loans"><span class="header-section-number">2.20</span> Device Loans</h2>
+<section id="device-loans" class="level2" data-number="2.21">
+<h2 data-number="2.21" class="anchored" data-anchor-id="device-loans"><span class="header-section-number">2.21</span> Device Loans</h2>
 <p>Our team manages a fleet of around 50 Android devices which can be borrowed at zero cost (or PWYC). We offer these for short term projects (1-6 months) only and some priority is given to MSc/PhD/DrPH students and to those with limited funding. If your project requires a large number of devices for a long period of time, we encourage you to include the purchase of devices in your project budgets. We are always grateful to accept donations of devices which will then become part of our device library.</p>
 <p>In addition to Android devices, we have a number of GPS loggers, WiFi hotspots, encrypted dictaphones and single board computers. Please contact us at <a href="mailto:odk@lshtm.ac.uk">odk@lshtm.ac.uk</a> to arrange a loan.</p>
 </section>
-<section id="odk-central-application-programming-interface-api" class="level2" data-number="2.21">
-<h2 data-number="2.21" class="anchored" data-anchor-id="odk-central-application-programming-interface-api"><span class="header-section-number">2.21</span> ODK Central Application Programming Interface (API)</h2>
+<section id="odk-central-application-programming-interface-api" class="level2" data-number="2.22">
+<h2 data-number="2.22" class="anchored" data-anchor-id="odk-central-application-programming-interface-api"><span class="header-section-number">2.22</span> ODK Central Application Programming Interface (API)</h2>
 <p>The <a href="https://docs.getodk.org/central-api/">ODK Central API</a> provides a set of methods by which programmers can directly communicate with ODK Central from software such as python and R, as well as from the command line.</p>
 <p>There is an official python library for ODK : <a href="https://github.com/getodk/pyodk">PyODK</a></p>
 <p>The <a href="https://docs.ropensci.org/ruODK/">ruODK</a> package provides functions for communication between R and ODK Central. We provide a very basic overview of how to use ruODK <a href="https://chrissyhroberts.github.io/Code_Book/ruODK_basics.html">here</a></p>
 </section>
-<section id="additional-tools-and-functions" class="level2" data-number="2.22">
-<h2 data-number="2.22" class="anchored" data-anchor-id="additional-tools-and-functions"><span class="header-section-number">2.22</span> Additional tools and functions</h2>
-<section id="converting-gis-administrative-data-to-odk-compatible-lists" class="level3" data-number="2.22.1">
-<h3 data-number="2.22.1" class="anchored" data-anchor-id="converting-gis-administrative-data-to-odk-compatible-lists"><span class="header-section-number">2.22.1</span> <a href="https://chrissyhroberts.github.io/Code_Book/diva_gis.html">Converting GIS administrative data to ODK compatible lists</a></h3>
+<section id="additional-tools-and-functions" class="level2" data-number="2.23">
+<h2 data-number="2.23" class="anchored" data-anchor-id="additional-tools-and-functions"><span class="header-section-number">2.23</span> Additional tools and functions</h2>
+<section id="converting-gis-administrative-data-to-odk-compatible-lists" class="level3" data-number="2.23.1">
+<h3 data-number="2.23.1" class="anchored" data-anchor-id="converting-gis-administrative-data-to-odk-compatible-lists"><span class="header-section-number">2.23.1</span> <a href="https://chrissyhroberts.github.io/Code_Book/diva_gis.html">Converting GIS administrative data to ODK compatible lists</a></h3>
 <p>Many ODK forms include questions about locations. <a href="https://chrissyhroberts.github.io/Code_Book/diva_gis.html">Here</a>, we provide a method in R for converting geographical administrative data (i.e.&nbsp;country &gt; district &gt; area &gt; village) from systems such as <a href="http://www.diva-gis.org/">DIVA GIS</a> for use in ODK’s select type questions.</p>
 </section>
-<section id="geofencing" class="level3" data-number="2.22.2">
-<h3 data-number="2.22.2" class="anchored" data-anchor-id="geofencing"><span class="header-section-number">2.22.2</span> <a href="https://chrissyhroberts.github.io/Code_Book/ODK_geofencing.html">Geofencing</a></h3>
+<section id="geofencing" class="level3" data-number="2.23.2">
+<h3 data-number="2.23.2" class="anchored" data-anchor-id="geofencing"><span class="header-section-number">2.23.2</span> <a href="https://chrissyhroberts.github.io/Code_Book/ODK_geofencing.html">Geofencing</a></h3>
 <p>Many workflows require geofencing. This process compares the current location of the enumerator to a set of spatial polygons, then performing some kind of logical test. A very common scenario requiring geofencing is within a cluster-based trial, when the workflow and form routing/logic may differ between cluster 1 (polygon A) and cluster 2 (polygon B). <a href="https://chrissyhroberts.github.io/Code_Book/ODK_geofencing.html">Here</a>, we provide a simple (R-based) method for creating geofences for ODK forms. Ultimately it uses GPS data, or points selected on a map, to determine which cluster/polygon you are inside. This method is scalable and resolves the geofence to around a 10 metre radius.</p>
 </section>
-<section id="biometrics-fingerprints" class="level3" data-number="2.22.3">
-<h3 data-number="2.22.3" class="anchored" data-anchor-id="biometrics-fingerprints"><span class="header-section-number">2.22.3</span> <a href="https://github.com/LSHTM-ORK/ODK_Biometrics">Biometrics / Fingerprints</a></h3>
+<section id="biometrics-fingerprints" class="level3" data-number="2.23.3">
+<h3 data-number="2.23.3" class="anchored" data-anchor-id="biometrics-fingerprints"><span class="header-section-number">2.23.3</span> <a href="https://github.com/LSHTM-ORK/ODK_Biometrics">Biometrics / Fingerprints</a></h3>
 <p><a href="https://github.com/LSHTM-ORK/ODK_Biometrics">This project</a> provides a simple Android app that interfaces with mobile data collection software to allow fingerprint templates to be scanned as part of an&nbsp;ODK form. We also provide a second app, designed to be run on a computer workstation, which can compare two fingerprint templates and return a matching score. It uses a cheap (~£50) wired fingerprint reader. We have a few of these which we can lend out. For more information, please read <a href="https://www.frontiersin.org/journals/digital-health/articles/10.3389/fdgth.2023.1072331/full">our paper</a>.</p>
 </section>
-<section id="audit-trail-reports" class="level3" data-number="2.22.4">
-<h3 data-number="2.22.4" class="anchored" data-anchor-id="audit-trail-reports"><span class="header-section-number">2.22.4</span> <a href="https://github.com/chrissyhroberts/ruODK_monitoring_tool">Audit trail reports</a></h3>
+<section id="audit-trail-reports" class="level3" data-number="2.23.4">
+<h3 data-number="2.23.4" class="anchored" data-anchor-id="audit-trail-reports"><span class="header-section-number">2.23.4</span> <a href="https://github.com/chrissyhroberts/ruODK_monitoring_tool">Audit trail reports</a></h3>
 <p>ODK has <a href="https://docs.getodk.org/form-audit-log/">powerful built-in options</a> to audit changes made during data collection, but audit trails for changes made on the ODK Central server are harder to obtain. Here, we provide a basic method (based on R/ruODK) which can obtain a reasonably detailed audit trail that captures (a) what was changed/edited and (b) why. Those undertaking clinical trials should note this functionality, which may be required for GCP / FDA 21 CFR Part 11 compliance.</p>
 </section>
-<section id="data-dictionaries" class="level3" data-number="2.22.5">
-<h3 data-number="2.22.5" class="anchored" data-anchor-id="data-dictionaries"><span class="header-section-number">2.22.5</span> <a href="https://github.com/chrissyhroberts/ODK_to_Print">Data Dictionaries</a></h3>
+<section id="data-dictionaries" class="level3" data-number="2.23.5">
+<h3 data-number="2.23.5" class="anchored" data-anchor-id="data-dictionaries"><span class="header-section-number">2.23.5</span> <a href="https://github.com/chrissyhroberts/ODK_to_Print">Data Dictionaries</a></h3>
 <p>Our colleagues at the <a href="https://github.com/SwissTPH/Pureser">Swiss Tropical and Public Health Institute</a> have created a great set of tools “Pureser” for converting ODK XLS Forms in to human-readable and rather attractive data dictionaries. Getting the tools running can be a little fiddly, and we recommend using the option to run the tool locally with docker compose.</p>
 </section>
 </section>
-<section id="frequently-asked-question-faq" class="level2" data-number="2.23">
-<h2 data-number="2.23" class="anchored" data-anchor-id="frequently-asked-question-faq"><span class="header-section-number">2.23</span> Frequently Asked Question (FAQ)</h2>
+<section id="frequently-asked-question-faq" class="level2" data-number="2.24">
+<h2 data-number="2.24" class="anchored" data-anchor-id="frequently-asked-question-faq"><span class="header-section-number">2.24</span> Frequently Asked Question (FAQ)</h2>
 <p><strong><em>I can’t access my project, what should I do?</em></strong></p>
 <p>If your project has not been active for 6 months, it is likely that we have automatically archived it. Your data are safe and will even continue to accept new submissions, but you will need to arrange for restored access to the web-server by contacting us.</p>
 <p>If your project has not been active for 24 months, it will have been permanently deleted</p>
@@ -454,7 +460,7 @@ If you would like to support our activities with a pay what you can (PWYC) payme
 <p><strong>I’m based outside LSHTM, can I still use the system?</strong></p>
 <p>Yes, if you are collaborating with someone from LSHTM, but it can get complicated, so contact us to discuss this on a case by case basis</p>
 <ul>
-<li>Sometimes a commercial provider is a better option</li>
+<li>Sometimes a commercial provider is a better option. We recommend and trust <a href="https://getodk.org/">getODK</a> and <a href="https://www.kobotoolbox.org/">KoBoToolbox</a></li>
 </ul>
 <p><strong>I’m not doing research, can I use ODK for internal data management/collection/survey work?</strong></p>
 <p>Yes, we use ODK internally for lots of things like monitoring student progress, or doing internal surveys, forms and so on. You should always check what needs to go through ethics and what doesn’t. This can be quite complicated.</p>
