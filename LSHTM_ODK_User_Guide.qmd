@@ -1,6 +1,6 @@
-# LSHTM ODK Server Setup Guide
+# LSHTM ODK Server Setup Guide & Terms of Use
 
-**version 3.0.1 -- 2023-04-21**
+**version 3.1.0 -- 2024-01-05**
 
 </Br></Br>
 
@@ -8,19 +8,31 @@
 
 This document provides an overview of the specific requirements for setting up and configuring an ODK Server through LSHTM's system, run by the LSHTM Global Health Analytics group in collaboration with LSHTM ITS.
 
+Please pay close attention to everything in this document.
+
 The majority of the support you will need to use ODK can be found in the official ODK documentation at <https://docs.getodk.org/>. There you will find instructions that are both comprehensive and very well maintained by the ODK Community <https://forum.getodk.org/>.
 
-Email queries to [*odk\@lshtm.ac.uk*](mailto:ODK@LSHTM.AC.UK)
+Email queries to [*odk\@lshtm.ac.uk*](mailto:ODK@LSHTM.AC.UK). We try to respond in real-time, but please remember that we are a small team which receives no direct funding for our activities and we might not always be able to help you as fast as you would like.
 
-We are on Twitter [\@LSHTM_GHA](https://twitter.com/LSHTM_GHA)
+We are on X [\@LSHTM_GHA](https://twitter.com/LSHTM_GHA) and important system updates (for instance if our servers go down unexpectedly) will be announced through our X account.
 
-## Before starting data collection 
+## Responsibilities
+
+The ODK Central system administrators are responsible for the high end management, security and integrity of the system, as well as for the provisioning of new web-user accounts and for the creation of new projects. They will ensure that the system works as it should, is kept up to date, is patched for security and can be fully restored in case of complete system failures, fires, floods etc.
+
+As a project manager, it is entirely your own responsibility to undertake ethical research / data collection and to store, manage and backup your own data in a sensible way, and in accordance with your data management plan. It is also your own responsibility to ensure compliance with local, regional and international data laws in respect to your own project.
+
+[**ODK Central is not a long-term data storage solution**]{.underline}. You should download copies of your full data sets on a regular (incremental) basis and should back those up as per institutional requirements. Once your data collection is complete, you should decommission your project, as detailed below.
+
+## Before starting data collection
 
 The research process can be non-linear and we respect the fact that you may need to set up and develop your data collection system ahead of other important landmark steps such as obtaining ethical permission for your study.
 
 We would like to take this opportunity to emphasise that before starting any data collection that involves study participants, you should have ***all*** of the following in place.
 
--   Ethical permissions required by LSHTM for the study
+-   Ethical permissions required by LSHTM and any third parties.
+
+    -   Exceptions apply for service / service evaluation, for some work which does not involve human subjects (other requirements may apply) and for some R&D activities. Please contact us to discuss your needs.
 
 -   A data management plan
 
@@ -28,21 +40,35 @@ We would like to take this opportunity to emphasise that before starting any dat
 
 General Information on data protection at LSHTM can be found [here](#0)
 
-If you need support for data protection issues, please contact the LSHTM Data Protection Officer at [DPO\@lshtm.ac.uk](#0)
+If you need support for data protection issues, or if you identify a data breach, please contact the LSHTM Data Protection Officer at [DPO\@lshtm.ac.uk](#0)
+
+## Server Locations
+
+Data are stored on institutional servers in LSHTM’s data centres at Keppel St and Tavistock Place, but can be downloaded from anywhere in the world by web-users who have appropriate access to read data. If your project requires that data are stored on servers based in other countries, then you should contact us [*odk\@lshtm.ac.uk*](mailto:ODK@LSHTM.AC.UK) to discuss your options
 
 ## Data Security
 
-ODK Central data are encrypted at rest. This means that when you are not logged in, your data are safe and securely encrypted.
+ODK Central data are encrypted at rest. This means that when you are not logged in, your data are safe and are securely encrypted.
 
-You should always log out of the Central server at the end of each session and should not save your password in your browser\'s \'remember password\' options
+You should always log out of the Central server at the end of each session and should never save your password in your browser's 'remember password' options.
 
-Using devices that are not protected by pin codes, encryption and physical protections may lead to compromise of your data.
+Using devices that are not protected by pin codes, encryption and physical protections may lead to compromise of your data. All data transfers from the ODK Collect app, or via the ODK API to the ODK Central server are protected by encrypted https connections.
 
-## Who will be able to see your data? 
+## Data Retention
 
-In this respect ODK provides options for standard, enhanced and 'zero-trust' contexts, but the choices you make about how you limit access to data will determine which of the various features you will be able to access on the system. Until the end of 2022, we required all users to default to a zero-trust model, but since 2023 we have allowed users to make an informed decision about how they wish to control access to their data. Whether you choose to use the standard or zero-trust models is up to you and this is controlled by how you choose to implement an additional layer of encryption on your forms and data.
+**ODK Central is [not a long-term data storage solution]{.underline}. You should download and backup your data on a regular basis. It is** **entirely your own responsibility to download and safely retain copies of your data and forms as you go along and at project completion**. 
 
-### *Standard* 
+Our servers are backed up and mirrored between Keppel St and Tavistock place. We keep daily backups for 56 days, and monthly backups for a period of 12 months. These backups are kept **for purposes of restoring the entire system** in case of a complete system failure. It is extremely difficult, costly and time-consuming to restore the data from a single project using our system backups, so it is your own responsibility to [**keep your own backups**]{.underline}.
+
+Any account which has had no new submissions for a **six month period** will be automatically archived. Web users (including project managers) will have their access automatically removed at this time. After archiving, servers will continue to accept new submissions, but no one will be able to download the data. No data will be lost, but access to archived data can only be restored by special arrangement. Please contact [odk\@lshtm.ac.uk](mailto:odk@lshtm.ac.uk) in this circumstance.
+
+Eighteen months after the project is archived (i.e. after 24 months of inactivity) **we will permanently delete all project data without any further warnings**. It is **the responsibility of the project manager** to keep copies of XLSForms and to download data regularly. Our team takes absolutely no responsibility for data left on an inactive or archived projects.
+
+## Who will be able to see your data?
+
+In this respect ODK provides options for standard security, as well as for 'zero-trust' contexts, but the choices you make about how you limit access to data will determine which of the various features you will be able to access on the system. Until the end of 2022, we required all users to default to a zero-trust model, but since 2023 we have allowed users to make an informed decision about how they wish to control access to their data. Whether you choose to use the standard or zero-trust models is up to you and this is controlled by how you choose to implement an additional layer of encryption on your forms and data.
+
+### *Standard*
 
 This is the default for a new project in ODK Central.
 
@@ -50,9 +76,9 @@ This is the default for a new project in ODK Central.
 
     -   The LSHTM ODK Central system administrators are included in this group
 
-    -   LSHTM\'s system admins (n = 3) require reasonable access to projects for service provision and support, but will never access your data sets for reasons other than service provision or to respond to requests for project support
+    -   LSHTM's system admins (n = 3) require reasonable access to projects for service provision and support, but will never access your data sets for reasons other than service provision or to respond to requests for project support
 
--   All ODK functions are available to projects using this level of security
+-   All ODK functions are available to projects which use this level of security
 
 -   This is the best option for work that involves management of large numbers of forms, management of many forms across time and for entity-based research
 
@@ -72,15 +98,13 @@ This is the best option for high security and zero-trust contexts, and for simpl
 
     -   including on-server editing through Enketo webforms, OData links etc, approvals etc
 
--   If you lose the decryption password, your data **will be lost**
+-   If you lose the decryption password, your **data** **will be irretrievable**
 
-## Server Locations
+<Br> <Br> Project Level Encryption provides an extra layer of security by encrypting all data both on-device and on-server. This can be great for the extra security it brings, but it does lock you out of some excellent features of ODK. It is therefore worth taking time to carefully consider whether you need/want project level encryption.
 
-All data are collected through LSHTM's ODK servers are stored on institutional servers in LSHTM\'s data centres at Keppel St. and Tavistock Place. All data are backed up according to LSHTM\'s institutional policy. If your project requires that data are stored on servers based in other countries, then you should contact us [*odk\@lshtm.ac.uk*](mailto:ODK@LSHTM.AC.UK) to discuss your options
+The basic function of project level encryption is that you click a button on the settings page and set a single system wide password that is then used to encrypt and decrypt your data across all forms in your project. When you want to download and decrypt your data, you provide the password and all your data will then be downloaded to your computer as a zip file containing human-readable data.
 
-Central has options for enhanced data protection through project level encryption. Please read about these options [here](#0) and think about whether using project level encryption is appropriate for your work; noting that some features of ODK, such as editing submitted data are disabled by project level encryption.
-
-In many cases we recommend turning this feature on unless you need to edit data longitudinally via Central\'s Enketo Webforms. 
+If you forget or lose this password, there is no way to recover it and you will lose all your data. The password is never stored on the server, but is used as the secret key for decrypting data using cyphers that are stored by the server. Because of this, the system administrators cannot under any circumstance help you to recover the password.
 
 ## Pay What You Can
 
@@ -91,19 +115,25 @@ If you would like to support our activities with a pay what you can (PWYC) payme
 
 PWYC payments are used to support our service, to purchase devices and to support research and the publication of research papers emerging from the project.
 
+## GCP / FDA 21 CFR Part 11 compliance
+
+The LSHTM ODK system has been used in a growing number of clinical trials. Users often ask whether ODK is GCP / FDA 21 CFR Part 11 compliant for use in clinical trials. Our answer is that no system is intrinsically compliant with these guidelines, but become compliant if used in a compliant way. Behind the scenes we have ensured that the platform meets technical requirements for backups, restores etc. The availability of audit trails (though you may need some help to make these, please ask us!) makes it possible to track post-submission edits to data and it is our firm belief that ODK is an excellent platform for data collection / management in clinical trials. We strongly encourage you to discuss your specific needs with us, especially if your trial is large and complex.
+
 ## Fair Usage
 
 The Central server is a shared resource that is used by hundreds of projects. Whilst the server is able to handle very large projects without other users seeing performance drops, the system can become unstable when there is very high demand for data transfers from the server to client machines. This infrequently occurs, but can do so when users request large amounts of data with high frequency.
 
-Users should not therefore attempt to create real-time high demand data links, or to build real time dashboards that utilise data from the Central server. If you plan to create any kind of dashboard that pulls data directly from the Central server with high demand, then you should first discuss this with our team via [odk\@lshtm.ac.uk](mailto:odk@lshtm.ac.uk). Dashboards should update at most once a day, preferably between 0000 and 0500 UTC. 
+Dashboards should update at most once a day, preferably between 0000 and 0500 UTC. 
+
+Users should not attempt to create real-time high demand data links, or to build real time dashboards that pull data from the Central server with greater regularity. If you have specific needs to create high demand data links, then you should first discuss this with our team via [odk\@lshtm.ac.uk](mailto:odk@lshtm.ac.uk).
 
 Users in violation of this policy may have their accounts suspended without warning. 
 
 ## System Information / Downtime
 
--   Important system updates (for instance if our servers go down unexpectedly) will be announced through our Twitter account[\@LSHTM_GHA](#0)
+-   Important system updates (for instance if our servers go down unexpectedly) will be announced through our X/Twitter account[\@LSHTM_GHA](#0)
 
--   Any URGENT issues should be emailed to ODK\@LSHTM.ac.uk
+-   Any URGENT issues should be emailed to [odk\@lshtm.ac.uk](mailto:odk@lshtm.ac.uk).
 
     -   Any support request should include
 
@@ -133,7 +163,7 @@ Request a server project LSHTM by completing [this form](https://docs.google.com
 
 -   Click the link and you will be taken to a page where you can set your password.
 
-    -   A good technique for making passwords is to use four random words, put together in a memorable way
+    -   A good technique for making passwords is to use several random words, put together in a memorable way
         -   For instance `grapes$CATCH£brickRED*fudge` is a strong and memorable password.
         -   Do not use simple replacement logic like this `cl3v3r-pa55w0rd` as passwords generated this way are easily cracked
         -   Please note that passwords should NOT include the name of your project, nor the year it started (i.e. `covidcomplications2020` would be a **very bad** password)
@@ -150,7 +180,7 @@ Request a server project LSHTM by completing [this form](https://docs.google.com
 
 ODK Central has two types of users, these being `web users` and `app users`.
 
--   [Web users](https://docs.getodk.org/central-users/#managing-web-users) are people who are authorised to use ODK Central\'s web interface. There are [different roles](https://docs.getodk.org/central-users/) for web-users, but only system admins can add web-users to your project. To add web users, please contact [odk\@lshtm.ac.uk](mailto:odk@lshtm.ac.uk), providing the name, institute and role required for each user. For data security purposes you should aim to minimise the number of web-users who have higher levels of access to your data. 
+-   [Web users](https://docs.getodk.org/central-users/#managing-web-users) are people who are authorised to use ODK Central's web interface. There are [different roles](https://docs.getodk.org/central-users/) for web-users, but only system admins can add web-users to your project. To add web users, please contact [odk\@lshtm.ac.uk](mailto:odk@lshtm.ac.uk), providing the name, institute and role required for each user. For data security purposes you should aim to minimise the number of web-users who have higher levels of access to your data. 
 
 -   [App users](https://docs.getodk.org/central-users/#managing-app-users) have primarily data collection roles and can not access the server website. App users may include field enumerators and partners outside LSHTM. Project managers can add as many app users as they like. 
 
@@ -160,16 +190,16 @@ ODK Central has two types of users, these being `web users` and `app users`.
 
 Before you can start collecting data, you have to change some settings. From the project page, click the `settings` tab. Here you have three options.
 
-![drawing](./images/central_settings.png){alt="drawing" width="800"}
+![](./images/central_settings.png){width="800"}
 
 -   **Archive** this project
-    -   This is used at the end of the study. Archiving is irreversible, so unless you are sure that you are done, don't press this button.
+    -   This is used at the end of the study. Archiving is irreversible, so unless you are sure that you are done, don't press this button. See the **decommissioning** section for more details on how to shut down your project.
 -   **Rename**
-    -   You will see the option to rename your project but **This should not be done under any circumstances**. The LSHTM system administrators use the project names to audit the use of our services across the platform and any projects which are renamed by users will be deactivated immediately.
+    -   You will see the option to rename your project but **this should not be done under any circumstances**. The LSHTM system administrators use the project names to audit the use of our services across the platform and any projects which are renamed by users will be deactivated immediately.
 -   **Encryption**
     -   If you want to turn on project level encryption, this is where you do it. You cannot reverse the process so think carefully about what you need.
 
-## Encryption
+## GDPR
 
 The **General Data Protection Regulation (GDPR) (EU) 2016/679** came in to force in May 2018 and this law requires that all reasonable steps should be taken to make it reasonably unlikely that personal and sensitive data relating to individuals and their health could be accessed or used by third parties without explicit consent.
 
@@ -179,11 +209,27 @@ The **General Data Protection Regulation (GDPR) (EU) 2016/679** came in to force
 
 -   Fully anonymous data sets (for instance where the project leads cannot link the data back to the origin in any way) are exempt from GDPR.
 
-<Br> <Br> Project Level Encryption provides an extra layer of security by encrypting all data both on-device and on-server. This can be great for the extra security it brings, but it does lock you out of some excellent features of ODK. It is therefore worth taking time to carefully consider whether you need/want project level encryption.
+All data-related activities should follow the [eight Caldicott Principles](https://www.ukcgc.uk/the-caldicott-principles), a set of concepts which can guide you to ensure that data and information about people are collected, used and stored in a sensible, appropriate and confidential manner.
 
-The basic function of project level encryption is that you click a button on the settings page and set a single system wide password that is then used to encrypt and decrypt your data across all forms in your project. When you want to download and decrypt your data, you provide the password and all your data will then be downloaded to your computer as a zip file containing human-readable data.
+## Decommissioning your project
 
-If you forget or lose this password, there is no way to recover it and you will lose all your data. The password is never stored on the server, but is used as the secret key for decrypting data using cyphers that are stored by the server. Because of this, the system administrators cannot under any circumstance help you to recover the password.
+When you have completed your project, we recommend the following decommissioning steps
+
+-   Download all data
+
+-   Download all XLSForms
+
+-   Delete your forms, using the form settings tab - This will remove all data submissions from your project
+
+-   Delete entities / data sets
+
+-   Revoke access to App Users
+
+-   Remove any all web users except yourself
+
+-   Archive the project using the red button on the project settings tab
+
+-   Email [odk\@lshtm.ac.uk](mailto:odk@lshtm.ac.uk) to let us know that you’ve finished
 
 ## Detailed instructions
 
@@ -191,11 +237,55 @@ If you forget or lose this password, there is no way to recover it and you will 
 
 -   For further instructions on how to use ODK, please refer to the official ODK documentation at <https://docs.getodk.org/>.
 
+## ODK XLS-Form templates and tutorials
+
+ODK provide detailed information about how to create forms [here](https://docs.getodk.org/xlsform/). We strongly recommend starting with their [tutorial](https://docs.getodk.org/xlsform-first-form/). We also believe that all forms should be based on the [official template file](https://github.com/getodk/xlsform-template/raw/main/ODK%20XLSForm%20Template.xlsx) as the consistent style, formatting and tools provided in the template will make it easier for you to share, reuse and re-purpose parts of your form in the future.
+
+## Device Loans
+
+Our team manages a fleet of around 50 Android devices which can be borrowed at zero cost (or PWYC). We offer these for short term projects (1-6 months) only and some priority is given to MSc/PhD/DrPH students and to those with limited funding. If your project requires a large number of devices for a long period of time, we encourage you to include the purchase of devices in your project budgets. We are always grateful to accept donations of devices which will then become part of our device library.
+
+In addition to Android devices, we have a number of GPS loggers, WiFi hotspots, encrypted dictaphones and single board computers. Please contact us at [odk\@lshtm.ac.uk](mailto:odk@lshtm.ac.uk) to arrange a loan.
+
+## ODK Central Application Programming Interface (API)
+
+The [ODK Central API](https://docs.getodk.org/central-api/) provides a set of methods by which programmers can directly communicate with ODK Central from software such as python and R, as well as from the command line.
+
+There is an official python library for ODK : [PyODK](https://github.com/getodk/pyodk)
+
+The [ruODK](https://docs.ropensci.org/ruODK/) package provides functions for communication between R and ODK Central. We provide a very basic overview of how to use ruODK [here](https://chrissyhroberts.github.io/Code_Book/ruODK_basics.html)
+
+## Additional tools and functions 
+
+### [Converting GIS administrative data to ODK compatible lists](https://chrissyhroberts.github.io/Code_Book/diva_gis.html)
+
+Many ODK forms include questions about locations. [Here](https://chrissyhroberts.github.io/Code_Book/diva_gis.html), we provide a method in R for converting geographical administrative data (i.e. country \> district \> area \> village) from systems such as [DIVA GIS](http://www.diva-gis.org/) for use in ODK's select type questions.
+
+### [Geofencing](https://chrissyhroberts.github.io/Code_Book/ODK_geofencing.html)
+
+Many workflows require geofencing. This process compares the current location of the enumerator to a set of spatial polygons, then performing some kind of logical test. A very common scenario requiring geofencing is within a cluster-based trial, when the workflow and form routing/logic may differ between cluster 1 (polygon A) and cluster 2 (polygon B). [Here](https://chrissyhroberts.github.io/Code_Book/ODK_geofencing.html), we provide a simple (R-based) method for creating geofences for ODK forms. Ultimately it uses GPS data, or points selected on a map, to determine which cluster/polygon you are inside. This method is scalable and resolves the geofence to around a 10 metre radius.
+
+### [Biometrics / Fingerprints](https://github.com/LSHTM-ORK/ODK_Biometrics)
+
+[This project](https://github.com/LSHTM-ORK/ODK_Biometrics) provides a simple Android app that interfaces with mobile data collection software to allow fingerprint templates to be scanned as part of an ODK form. We also provide a second app, designed to be run on a computer workstation, which can compare two fingerprint templates and return a matching score. It uses a cheap (\~£50) wired fingerprint reader. We have a few of these which we can lend out. For more information, please read [our paper](https://www.frontiersin.org/journals/digital-health/articles/10.3389/fdgth.2023.1072331/full).
+
+### [Audit trail reports](https://github.com/chrissyhroberts/ruODK_monitoring_tool)
+
+ODK has [powerful built-in options](https://docs.getodk.org/form-audit-log/) to audit changes made during data collection, but audit trails for changes made on the ODK Central server are harder to obtain. Here, we provide a basic method (based on R/ruODK) which can obtain a reasonably detailed audit trail that captures (a) what was changed/edited and (b) why. Those undertaking clinical trials should note this functionality, which may be required for GCP / FDA 21 CFR Part 11 compliance.
+
+### [Data Dictionaries](https://github.com/chrissyhroberts/ODK_to_Print)
+
+Our colleagues at the [Swiss Tropical and Public Health Institute](https://github.com/SwissTPH/Pureser) have created a great set of tools "Pureser" for converting ODK XLS Forms in to human-readable and rather attractive data dictionaries. Getting the tools running can be a little fiddly, and we recommend using the option to run the tool locally with docker compose.
+
 ## Frequently Asked Question (FAQ)
 
 ***I can't access my project, what should I do?***
 
-Often these issues are temporary and relate to a specific user, their location and their internet access point.
+If your project has not been active for 6 months, it is likely that we have automatically archived it. Your data are safe and will even continue to accept new submissions, but you will need to arrange for restored access to the web-server by contacting us.
+
+If your project has not been active for 24 months, it will have been permanently deleted
+
+If your server has been in use within the last 6 months, then most issues are temporary and relate to a specific user, their location and their internet access point.
 
 -   Try logging in from another WiFi or mobile internet connection.
 

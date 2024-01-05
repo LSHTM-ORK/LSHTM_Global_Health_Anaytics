@@ -12,7 +12,7 @@ Our aim is to leverage emerging technology for the benefit of human health, with
 
 Through funding from the NIHR and DHSC to the LSHTM EDK project, our group has recently been providing data collection and real time analytics support to two major evaluations of Ebola vaccines in DR Congo. Our collaboration with the WHO has led to the first licensure of VSV-ZEBOV-GP as an effective vaccine against Ebola. More recently we have worked with the WHO to study vaccines and therapeutics targeted against SARS-CoV2.
 
-Our team provides data coordination and management on the flagship \"Tujiokowe\" (DRC-EB-001) trial, a major evaluation of Janssen pharmaceuticals\' heterologous two dose ebola vaccine, which is funded by a £22m grant from CEPI.
+Our team provides data coordination and management on the flagship "Tujiokowe" (DRC-EB-001) trial, a major evaluation of Janssen pharmaceuticals' heterologous two dose ebola vaccine, which is funded by a £22m grant from CEPI.
 
 Members of the LSHTM Global Health Analytics Group lead two work-packages (Labs/Data) on FIEBRE, a £10m DfID funded study on the causes of fever in Low and Middle Income Countries (LMICs) as well as leading investigations on the Mos-Def study, a sister study to FIEBRE which is funded by a £360,000 grant from The Global Good Fund.
 
