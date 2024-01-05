@@ -4,7 +4,7 @@
 
 This site provides further information about the various services, systems and methods created by the LSHTM Global Health Analytics Group.
 
-We are on Twitter [\@LSHTM_GHA](https://twitter.com/LSHTM_GHA)
+We are on X/Twitter [\@LSHTM_GHA](https://twitter.com/LSHTM_GHA)
 
 The LSHTM Global Health Analytics group are a multi-disciplinary team of epidemiologists, laboratory researchers and data scientists who are involved in bench, field and computer based research centred around global health.
 
