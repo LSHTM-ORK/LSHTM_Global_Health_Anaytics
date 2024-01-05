@@ -6,10 +6,7 @@ book:
 
   chapters:
   - index.qmd
-
-  - part: "ODK"
-    chapters:
-       - LSHTM_ODK_User_Guide.qmd
+  - LSHTM_ODK_User_Guide.qmd
 
 
 bibliography: references.bib
