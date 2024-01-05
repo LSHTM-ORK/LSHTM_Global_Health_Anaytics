@@ -1,6 +1,6 @@
 # [LSHTM ODK Server Setup Guide & Terms of Use](https://lshtm-ork.github.io/LSHTM_Global_Health_Anaytics/LSHTM_ODK_User_Guide.html)
 
-**version 3.1.1 -- 2024-01-05**
+**version 3.1.2 -- 2024-01-05**
 
 </Br></Br>
 
@@ -70,7 +70,19 @@ Eighteen months after the project is archived (i.e. after 24 months of inactivit
 
 ## Who will be able to see your data?
 
-In this respect ODK provides options for standard security, as well as for 'zero-trust' contexts, but the choices you make about how you limit access to data will determine which of the various features you will be able to access on the system. Until the end of 2022, we required all users to default to a zero-trust model, but since 2023 we have allowed users to make an informed decision about how they wish to control access to their data. Whether you choose to use the standard or zero-trust models is up to you and this is controlled by how you choose to implement an additional layer of encryption on your forms and data.
+ODK Central has two types of users, these being `web users` and `app users`.
+
+-   [Web users](https://docs.getodk.org/central-users/#managing-web-users) are people who are authorised to use ODK Central's web interface. There are [different roles](https://docs.getodk.org/central-users/) for web-users, but only system admins can add web-users to your project. To add web users, please contact [odk\@lshtm.ac.uk](mailto:odk@lshtm.ac.uk), providing the name, institute and role required for each user. For data security purposes you should aim to minimise the number of web-users who have higher levels of access to your data. 
+
+-   [App users](https://docs.getodk.org/central-users/#managing-app-users) have primarily data collection roles and can not access the server website. App users may include field enumerators and partners outside LSHTM. Project managers can add as many app users as they like. 
+
+-   [Public access links](https://docs.getodk.org/central-submissions/) can be created by web users. These links can be used by participants to submit data through a web browser. They are useful for many types of work, including online/postal surveys and things advertised on websites, adverts and posters.
+
+## Encryption
+
+ODK Central data are encrypted at rest. This means that when you are not logged in, your data are safe and are securely encrypted. Data transfers are also encrypted using https protocols.
+
+ODK provides options for standard security, as well as for 'zero-trust' contexts, but the choices you make about how you limit access to data will determine which of the various features you will be able to access on the system. Until the end of 2022, we required all users to default to a zero-trust model, but since 2023 we have allowed users to make an informed decision about how they wish to control access to their data. Whether you choose to use the standard or zero-trust models is up to you and this is controlled by how you choose to implement an additional layer of encryption on your forms and data.
 
 ### *Standard*
 
@@ -179,16 +191,6 @@ Request a server project LSHTM by completing [this form](https://docs.google.com
 -   If you click on the name of the project (here `Default Project`) you will be taken to the project page, which is where you will do most of the work. On this page you can add and test data collection forms, create and control access for users for the ODK Android app, or make URLs that will allow data collection via web-forms. The project page looks like this
 
 ![drawing](./images/central_project_view.png){alt="drawing" width="800"} </Br>
-
-## User types
-
-ODK Central has two types of users, these being `web users` and `app users`.
-
--   [Web users](https://docs.getodk.org/central-users/#managing-web-users) are people who are authorised to use ODK Central's web interface. There are [different roles](https://docs.getodk.org/central-users/) for web-users, but only system admins can add web-users to your project. To add web users, please contact [odk\@lshtm.ac.uk](mailto:odk@lshtm.ac.uk), providing the name, institute and role required for each user. For data security purposes you should aim to minimise the number of web-users who have higher levels of access to your data. 
-
--   [App users](https://docs.getodk.org/central-users/#managing-app-users) have primarily data collection roles and can not access the server website. App users may include field enumerators and partners outside LSHTM. Project managers can add as many app users as they like. 
-
--   [Public access links](https://docs.getodk.org/central-submissions/) can be created by web users. These links can be used by participants to submit data through a web browser. They are useful for many types of work, including online/postal surveys and things advertised on websites, adverts and posters.
 
 ## Initial project settings
 
