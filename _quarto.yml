@@ -10,11 +10,6 @@ book:
   - part: "ODK"
     chapters:
        - LSHTM_ODK_User_Guide.qmd
-       - ruODK_basics.qmd
-
-  - part: "Other Data Tools"
-    chapters:
-       - data_tools.qmd
 
 
 bibliography: references.bib
