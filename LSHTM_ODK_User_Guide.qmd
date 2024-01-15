@@ -239,7 +239,7 @@ When you have completed your project, we recommend the following decommissioning
 
 ## Detailed instructions
 
--   Your project should now be up and running, with either standard, zero trust (`project level)` or enhanced (`form level encryption)` in place.
+-   Your project should now be up and running, with either standard, zero trust (`project level)` or enhanced (`form level)` encryption in place.
 
 -   For further instructions on how to use ODK, please refer to the official ODK documentation at <https://docs.getodk.org/>.
 
